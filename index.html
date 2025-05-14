@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostafa Rabia</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center items-center h-16">
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-600 hover:text-gray-800" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2 bg-white">
+                <a href="#about" class="block py-2 nav-link">About</a>
+                <a href="#skills" class="block py-2 nav-link">Skills</a>
+                <a href="#experience" class="block py-2 nav-link">Experience</a>
+                <a href="#projects" class="block py-2 nav-link">Projects</a>
+                <a href="#contact" class="block py-2 nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex items-center justify-center relative overflow-hidden">
+        <div id="particles-js" class="absolute inset-0"></div>
+        <div class="text-center z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-gray-800">Mostafa Rabia</h1>
+            <p class="text-2xl md:text-3xl text-gray-600 typewriter">Back-End Engineer</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 fade-in">
+                    <img src="1736544193913.jpeg" alt="Profile" width="300" height="300" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 fade-in">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-800">About Me</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        <b>Motivated back-end engineer with 5+ years of experience</b>, passionate about problem-solving, debugging, and optimizing systems for continuous improvement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="skill-card">
+                    <i class="fab fa-php text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">PHP</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-laravel text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Laravel</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">MySQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">REST APIs</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cubes text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">OOP</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-lightbulb text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Problem solving</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-linux text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Linux</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Git</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-sync-alt text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">CI/CD</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">DevOps</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-project-diagram text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Agile</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-vial text-4xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Testing</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="70"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold">Backend Team Lead</h3>
+                        <p class="text-gray-600">Zood AI</p>
+                        <p class="text-sm text-gray-500">11/2024 - 04/2025</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold">Senior Back-End Engineer</h3>
+                        <p class="text-gray-600">EduStation</p>
+                        <p class="text-sm text-gray-500">2023 - 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold">Senior Back-End Engineer</h3>
+                        <p class="text-gray-600">Tareequl Jannah</p>
+                        <p class="text-sm text-gray-500">2022 - 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold">Mid-level Backend Engineer</h3>
+                        <p class="text-gray-600">Talent Area</p>
+                        <p class="text-sm text-gray-500">2020 - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <img src="https://cdn.albuhutifiqh.com/assists/1oVjogYq90i79HiLUFaQD6hsnmRXwJaieg21ZQEI.png" alt="Al-Buhuti" class="w-full h-48 object-cover rounded-t-lg" style="width: auto;margin: 0 auto;">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Al-Buhuti</h3>
+                        <p class="text-gray-600">Institute for learning Islamic sciences</p>
+                        <a href="https://albuhutifiqh.com/" class="mt-4 inline-block text-blue-500 hover:text-blue-700">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://www.huffazulmutoon.com/img/logo.645a9c43.svg" alt="Huffaz Ulmutoon" class="w-full h-48 object-cover rounded-t-lg" style="width: auto;margin: 0 auto;">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Huffaz Ulmutoon</h3>
+                        <p class="text-gray-600">App for saving and recurring Islamic books</p>
+                        <a href="https://www.huffazulmutoon.com/" class="mt-4 inline-block text-blue-500 hover:text-blue-700">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://www.tareequljannah.com/wp-content/uploads/2024/07/Untitled-design-150x150.png" alt="Tareequl Jannah" class="w-full h-48 object-cover rounded-t-lg" style="width: auto;margin: 0 auto;">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Tareequl Jannah</h3>
+                        <p class="text-gray-600">Institute for learning Quran, Arabic and Islamic studies</p>
+                        <a href="https://www.tareequljannah.com/" class="mt-4 inline-block text-blue-500 hover:text-blue-700">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://edustation.app/assets/frontend/img/logo.png" alt="EduStation" class="w-full h-48 object-cover rounded-t-lg" style="width: auto;margin: 0 auto;">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">EduStation</h3>
+                        <p class="text-gray-600">App for connecting student with companies for internships</p>
+                        <a href="https://edustation.app/" class="mt-4 inline-block text-blue-500 hover:text-blue-700">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/png" alt="Project" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Accountant System</h3>
+                        <p class="text-gray-600">System for managing accounting and financial transactions</p>
+                        <!-- <a href="https://albuhutifiqh.com/" class="mt-4 inline-block text-blue-500 hover:text-blue-700">View Project →</a> -->
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/png" alt="Project" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Simple Blog</h3>
+                        <p class="text-gray-600">Simple blog application with user authentication</p>
+                        <a href="https://github.com/MostafaRabia/laravel-posts" class="mt-4 inline-block text-blue-500 hover:text-blue-700">View Project →</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Contact Me</h2>
+            <div class="max-w-2xl mx-auto">
+                <!-- Contact Info -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope text-3xl text-red-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Email</h3>
+                        <a href="mailto:mostafarabia64@gmail.com" class="text-gray-600 hover:text-red-600 transition-colors">
+                            mostafarabia64@gmail.com
+                        </a>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-phone text-3xl text-red-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Phone</h3>
+                        <a href="tel:+201118449590" class="text-gray-600 hover:text-red-600 transition-colors">
+                            +201118449590
+                        </a>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fab fa-linkedin text-3xl text-red-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/mrabia/" target="_blank" class="text-gray-600 hover:text-red-600 transition-colors">
+                            linkedin.com/in/mrabia
+                        </a>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fab fa-github text-3xl text-red-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+                        <a href="https://github.com/MostafaRabia" target="_blank" class="text-gray-600 hover:text-red-600 transition-colors">
+                            github.com/MostafaRabia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
